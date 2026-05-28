@@ -1,0 +1,170 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: #34495e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #f1c40f;
+}
+
+.error-box {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #2ecc71;
+}
+
+.character-card {
+    background-color: #1abc9c;
+    color: #2c3e50;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.action-btn {
+    flex: 1;
+    padding: 8px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.action-btn.level-up {
+    background-color: #8e44ad;
+}
+
+.action-btn:hover {
+    opacity: 0.8;
+}
+
+/* 皮肤选择器样式 */
+.skin-selector {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    background-color: #1a252f;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px inset #2c3e50;
+}
+
+.skin-selector label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #2c3e50;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    font-weight: normal;
+}
+
+.skin-selector label:hover {
+    background-color: #3b5998;
+}
+
+.skin-selector input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    cursor: pointer;
+    accent-color: #f1c40f; 
+}
+
+.character-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #16a085;
+    padding-bottom: 5px;
+    font-size: 1.4rem;
+}
+
+/* 角色立绘展示区样式 */
+.image-container {
+    text-align: center;
+    background-color: #2c3e50;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #34495e;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+
+.character-portrait {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.5));
+    transition: transform 0.3s ease;
+}
+
+.character-portrait:hover {
+    transform: scale(1.1) translateY(-5px);
+}
