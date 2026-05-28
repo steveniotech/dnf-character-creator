@@ -203,9 +203,9 @@ function renderParty() {
         
         // 分配职业立绘 (你可以随时在这里换成你自己的图片链接)
         if (char.getClassType() === "Warrior") {
-            portrait.src = "https://img.icons8.com/color/150/000000/knight.png"; 
+            portrait.src = "warrior.png"; 
         } else if (char.getClassType() === "Mage") {
-            portrait.src = "https://img.icons8.com/color/150/000000/witch.png"; 
+            portrait.src = "mage.png"; 
         }
         imageContainer.appendChild(portrait);
 
